@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결과 페이지</title>
+</head>
+<body>
+    <h3>입력된 사용자 이름 : <span id="name-result"></span></h3>
+    <!-- JS 맛보기 -->
+    <script>
+        const params = new URL(location.href).searchParams;
+        const nameresult = document.getElementById("name-result");
+        nameresult.innerText = params.get("user-name");
+    </script>
+</body>
+</html>
